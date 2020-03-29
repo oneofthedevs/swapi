@@ -1,0 +1,56 @@
+<section class="container-fluid">
+  <div class="row fullpage">
+    <div
+      class="col-lg-8 col-12 p-0 hide d-flex justify-content-center align-items-center"
+    >
+      <img src="../../assets/supermarket.svg" alt="Logo" />
+    </div>
+    <div class="col-lg-4 col-12 p-0">
+      <div
+        class="login d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="display-4 mb-5">Log In</h1>
+        <form>
+          <label class="sr-only" for="inlineFormInputGroupUsername2"
+            >Username</label
+          >
+          <div class="input-group my-3mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="E-Mail"
+            />
+          </div>
+          <input
+            class="form-control my-3"
+            type="password"
+            placeholder="Password"
+          />
+          <div class="custom-control custom-checkbox my-3 mr-sm-2">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="customControlInline"
+            />
+            <label class="custom-control-label" for="customControlInline"
+              >Remember me</label
+            >
+          </div>
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Log In"
+            routerLink="/"
+          />
+          <a class="ml-2" style="font-size: 0.875rem;" routerLink="/register"
+            >Don't Have an account? Sign Up</a
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

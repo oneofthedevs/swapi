@@ -1,0 +1,31 @@
+<section class="container">
+  <div class="row mt-3">
+    <div class="col-lg-4 col-md-6" *ngFor="let item of data; let i = index">
+      <mat-card
+        class="text-center mt-1 mb-1 justify-content-center align-items-center"
+        ><mat-card-title
+          ><b>{{ item.name }}</b></mat-card-title
+        >
+        <hr />
+        <div class="d-flex flex-column text-left">
+          <p>Height: {{ item.height }}</p>
+          <p>Weight: {{ item.mass }}</p>
+          <p>Birth Year: {{ item.birth_year }}</p>
+          <p>Gender: {{ item.gender }}</p>
+        </div>
+        <div class="d-flex">
+          <button
+            class="btn btn-warning"
+            style="height: 40.25px;"
+            routerLink="details/{{ i }}"
+          >
+            Buy
+          </button>
+          <div class="form-group ml-3">
+            <input class="form-control" type="number" placeholder="Quantity" />
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</section>
